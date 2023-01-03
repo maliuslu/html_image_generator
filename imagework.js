@@ -34,7 +34,7 @@ function createHtml(profile) {
     html = html + '</div>';
   }
 
-  var newWindow = window.open("/" + profile + ".html", "newWindow", "width=2000,height=1000");
+  var newWindow = window.open(profile + ".html", "newWindow", "width=2000,height=1000");
   newWindow.onload = function () {
     newWindow.document.body.innerHTML = html;
   };
